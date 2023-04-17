@@ -1,0 +1,81 @@
+import React, {useState} from 'react';
+
+import { Button, StyleSheet, Text, TextInput, View, FlatList} from 'react-native';
+
+import { Entypo } from '@expo/vector-icons';
+
+export default function App() {
+
+  const [numeros, setNumeros] = useState([
+
+    {nome: 'um', key: 1},
+
+    {nome:'dois', key: 2},
+
+    {nome:'três', key: 3},
+
+    {nome:'quatro', key: 4},
+
+    {nome:'cinco', key: 5},
+
+    {nome:'seis', key: 6},
+
+    {nome:'sete', key: 7},
+
+    {nome:'oito', key: 8},
+
+    {nome:'nove', key: 9},
+
+    {nome:'dez', key: 10},
+
+    {nome:'onze', key: 11},
+
+    {nome:'doze', key: 12},
+
+    {nome:'treze', key: 13},
+
+    {nome:'quatorze', key: 14},
+
+    {nome:'quinze', key: 15},
+
+  ])
+
+  return (
+
+    <FlatList
+
+    numColumns={3}
+
+    keyExtractor={(item) => item.key}
+
+    data={numeros}
+
+    renderItem={({item}) =>(
+
+    <Text style = {styles.item}>{item.nome}</Text>
+
+    )}
+
+    />
+
+  );
+
+}
+
+const styles = StyleSheet.create({
+
+  item:{
+
+    marginTop: 24,
+
+    padding: 30,
+
+    justifyContent:'space-between',
+
+    backgroundColor: 'red',
+
+    fontSize: 24,
+
+  },
+
+});
