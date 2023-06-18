@@ -4,7 +4,7 @@
 O projeto tem como base a ideia de lista de tarefas simples diárias a serem feitas para a criação de uma rotina fixa.
 
 ## :books: Funcionalidades
-* <b>Funcionalidade 1</b>: Aplicativo cria uma lista de tarefas para itens serem adicionados em cada dia da semana.
+* <b>Funcionalidade </b>: Aplicativo cria uma lista de tarefas para itens serem adicionados em cada dia da semana.
 
 ## :wrench: Tecnologias utilizadas
 Nesse projeto foram utilizadas bibliotecas do react-native 100% em linguagem JavaScript na plataforma Visual Code Studio. No back-end foram utilizados o docker e o Beekeper Studio Ultimate.
